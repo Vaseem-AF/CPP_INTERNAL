@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+template<typename T>
+void Swap(T &x,T &y)
+{ 
+ T temp;
+ temp=x;
+ x=y;
+ y=temp;
+}
+int main()
+{
+ int a=10,b=20;
+float x=1.8,y=2.5;
+cout<<"before swapping a&b:"<<a<<"\t"<<b<<endl;
+cout<<"before swapping x&y:"<<x<<"\t"<<y<<endl;
+Swap(a,b);
+Swap(x,y);
+cout<<"after swapping a&b:"<<a<<"\t"<<b<<endl;
+cout<<"after swapping x&y:"<<x<<"\t"<<y<<endl;
+return 0
